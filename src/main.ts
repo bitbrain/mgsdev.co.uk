@@ -10,7 +10,10 @@ import "primeicons/primeicons.css"; //icons
 export const createApp = ViteSSG(
   App,
   { routes: router.getRoutes(), base: import.meta.env.BASE_URL },
-  ({ app, router, isClient }) => {
-    app.use(PrimeVue);
+  async ({ app, router, isClient }) => {
+    if (isClient) {
+      const PrimeVue = await import('primevue/config');
+      app.use(PrimeVue.default);
+    }
   }
 );

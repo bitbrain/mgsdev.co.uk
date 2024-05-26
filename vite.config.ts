@@ -7,4 +7,7 @@ export default defineConfig({
     vue(),
     tsconfigPaths(), // Helps with TypeScript path aliases
   ],
+  optimizeDeps: {
+    include: ['primevue']
+  }
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite-ssg build",
-    "serve": "vite-ssg serve"
+    "preview": "vite preview"
   },
   "dependencies": {
     "vite-ssg": "^0.23.7",

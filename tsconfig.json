@@ -1,25 +1,33 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    "moduleResolution": "Bundler",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "declaration": false,
     "noEmit": true,
-    "jsx": "preserve",
-
-    /* Linting */
     "strict": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@geajs/core"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts",
+    "vite.config.ts",
+    "ssg.mjs",
+    "node_modules/@geajs/vite-plugin/gea-env.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "dist-ssg",
+    "node_modules"
+  ]
 }

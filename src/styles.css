@@ -4,7 +4,7 @@
 
 :root {
   --bg-page: #f4f2ee;
-  --bg-hero: #efeeea;
+  --bg-hero: #f0f0f0;
   --bg-portrait: #d3d1cc;
   --bg-icon: #ecebe6;
 
@@ -150,6 +150,24 @@ p {
 }
 
 /* ==========================================================================
+   Motion (subtle reveal on scroll)
+   ========================================================================== */
+
+.has-reveal [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+  transition:
+    opacity 560ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 560ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.has-reveal [data-reveal].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* ==========================================================================
    Prose (constrained-width text block)
    ========================================================================== */
 
@@ -159,6 +177,14 @@ p {
 
 .prose p + p {
   margin-top: 18px;
+}
+
+#about .prose p {
+  font-size: 19px;
+}
+
+#about .prose {
+  max-width: 760px;
 }
 
 .prose + .btn {
@@ -303,8 +329,8 @@ p {
 .site-header__logo {
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.14em;
+  font-size: 22px;
+  letter-spacing: -0.05em;
   color: var(--color-text);
   text-transform: uppercase;
 }
@@ -343,11 +369,11 @@ p {
   top: 0;
   bottom: 0;
   transform: translateX(-50%);
-  width: clamp(340px, 40%, 560px);
-  background-image: url('/portrait.svg');
+  width: clamp(440px, 52%, 720px);
+  background-image: url('/portrait.webp');
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover;
+  background-size: contain;
   pointer-events: none;
   z-index: 0;
 }
@@ -440,6 +466,35 @@ p {
 }
 
 /* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  border-top: 1px solid var(--color-border-soft);
+  background: var(--bg-page);
+}
+
+.site-footer__inner {
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.site-footer__copy {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-soft);
+}
+
+.site-footer__link {
+  color: var(--color-text-muted);
+  transition: opacity 160ms ease;
+}
+
+.site-footer__link:hover {
+  opacity: 0.72;
+}
+
+/* ==========================================================================
    Responsive
    ========================================================================== */
 
@@ -453,7 +508,7 @@ p {
   }
 
   .hero__portrait {
-    width: min(36%, 320px);
+    width: min(48%, 440px);
   }
 
   .grid--3col {
@@ -489,10 +544,10 @@ p {
     bottom: auto;
     left: auto;
     transform: none;
-    width: 44%;
-    height: 60%;
-    max-width: 220px;
-    max-height: 280px;
+    width: 58%;
+    height: 70%;
+    max-width: 310px;
+    max-height: 380px;
     background-image:
       linear-gradient(
         to bottom,
@@ -500,9 +555,9 @@ p {
         transparent 55%,
         var(--bg-hero) 100%
       ),
-      url('/portrait.svg');
+      url('/portrait.webp');
     background-position: center top, center bottom;
-    background-size: 100% 100%, cover;
+    background-size: 100% 100%, contain;
     background-repeat: no-repeat, no-repeat;
   }
 
@@ -517,7 +572,7 @@ p {
   }
 
   .hero__col--left {
-    padding-right: 46%;
+    padding-right: 58%;
   }
 
   .hero__col--right {

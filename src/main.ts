@@ -1,5 +1,6 @@
 import App from './app'
 import './styles.css'
+import { initRevealOnScroll } from './revealOnScroll'
 
 const root = document.getElementById('app')
 if (!root) {
@@ -8,3 +9,4 @@ if (!root) {
 
 const app = new App()
 app.render(root)
+initRevealOnScroll({ root })

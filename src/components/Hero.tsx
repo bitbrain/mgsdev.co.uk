@@ -5,8 +5,8 @@ export default class Hero extends Component {
     return (
       <section class="hero" id="top">
         <div class="hero__portrait" aria-hidden="true" />
-        <div class="container hero__inner">
-          <div class="hero__col hero__col--left">
+        <div class="container hero__inner" data-reveal-group>
+          <div class="hero__col hero__col--left" data-reveal>
             <h1 class="hero__headline">
               <span class="hero__headline-line">Sustainable</span>
               <span class="hero__headline-line">software.</span>
@@ -21,7 +21,7 @@ export default class Hero extends Component {
             </p>
           </div>
 
-          <div class="hero__col hero__col--right">
+          <div class="hero__col hero__col--right" data-reveal>
             <h2 class="hero__subheadline">
               <span class="hero__subheadline-line">Navigating</span>
               <span class="hero__subheadline-line">times of AI.</span>

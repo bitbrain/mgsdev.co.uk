@@ -4,8 +4,8 @@ export default class Features extends Component {
   template() {
     return (
       <section class="section section--compact" id="approach">
-        <div class="container grid grid--3col">
-          <article class="media-row">
+        <div class="container grid grid--3col" data-reveal-group>
+          <article class="media-row" data-reveal>
             <div class="icon-circle" aria-hidden="true">
               <svg
                 viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ export default class Features extends Component {
             </div>
           </article>
 
-          <article class="media-row">
+          <article class="media-row" data-reveal>
             <div class="icon-circle" aria-hidden="true">
               <svg
                 viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ export default class Features extends Component {
             </div>
           </article>
 
-          <article class="media-row">
+          <article class="media-row" data-reveal>
             <div class="icon-circle" aria-hidden="true">
               <svg
                 viewBox="0 0 24 24"

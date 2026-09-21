@@ -23,11 +23,11 @@ export default class Hero extends Component {
 
           <div class="hero__col hero__col--right" data-reveal>
             <h2 class="hero__subheadline">
-              <span class="hero__subheadline-line">Navigating</span>
-              <span class="hero__subheadline-line">times of AI.</span>
+              <span class="hero__subheadline-line">Pragmatic</span>
+              <span class="hero__subheadline-line">engineering.</span>
             </h2>
             <p class="hero__copy">
-              Helping companies build sustainable software and make confident technology decisions in an AI-driven world.
+              Helping companies design, build and run software that is simple enough to change and solid enough to last.
             </p>
             <a href="mailto:hello@mgsdev.co.uk" class="btn btn--primary hero__cta">
               Let&rsquo;s Talk

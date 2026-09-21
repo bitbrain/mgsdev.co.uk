@@ -11,7 +11,7 @@ export default class About extends Component {
               I&rsquo;m Miguel Gonzalez Wanzek, <strong>founder of MGS DEV LTD</strong>, a software consultancy building <strong>sustainable software for the future of humankind</strong>.
             </p>
             <p>
-              I specialise in <strong>simplifying complex systems</strong>, <strong>leading under pressure</strong> and helping teams deliver clear, reliable outcomes. My experience spans enterprise and startup engineering, incident management, fintech, adtech and practical agentic AI systems, including <strong>RAG, vector search and LLM evals</strong>.
+              I specialise in <strong>simplifying complex systems</strong>, <strong>leading under pressure</strong> and helping teams deliver clear, reliable outcomes. My experience spans enterprise and startup engineering, incident management, fintech and adtech.
             </p>
             <p>
               Outside work, I develop games with Godot Engine, contribute to FMOD integration and Godot core, and maintain <strong>open-source Godot addons with more than 3,000 GitHub stars</strong>.

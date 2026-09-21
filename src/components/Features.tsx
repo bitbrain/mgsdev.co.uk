@@ -46,9 +46,9 @@ export default class Features extends Component {
               </svg>
             </div>
             <div class="media-row__body">
-              <h3 class="media-row__title">AI with purpose</h3>
+              <h3 class="media-row__title">Pragmatic by default</h3>
               <p>
-                Cutting through the hype to apply AI where it truly creates value.
+                Choosing the simplest approach that works. Tools follow the problem, not the other way around.
               </p>
             </div>
           </article>

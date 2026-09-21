@@ -15,9 +15,9 @@ export default class Services extends Component {
             </article>
 
             <article class="card" data-reveal>
-              <h3 class="card__title">AI Integration</h3>
+              <h3 class="card__title">Hands-on Engineering</h3>
               <p>
-                Identifying where AI creates genuine value in your workflows. Practical adoption strategies without the hype.
+                Getting into the codebase when it counts. Reviews, refactors and implementation that move the work forward.
               </p>
             </article>
 
